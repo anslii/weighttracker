@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Weight Tracker</h1>
+    <form id="weight-form">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" step="0.01" id="weight" required>
+        <button type="submit">Add Weight</button>
+    </form>
+    <h2>Recorded Weights</h2>
+    <table id="weights-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Weight (kg)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h2>Weekly Average Weight</h2>
+    <div id="weekly-average"></div>
+    <script src="script.js"></script>
+</body>
+</html>
